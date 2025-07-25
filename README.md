@@ -1,2 +1,4 @@
 # DeepFake-on-Hailo
 Computer Vision University Project: Parsing, Quantization, and Compilation of Neural Models
+
+This project focuses on deploying deepfake detection models on a Raspberry Pi 5 using the Hailo-8 AI accelerator. The objective was to evaluate real-time inference performance—specifically latency and FPS—by comparing traditional PyTorch and ONNX models with their optimized Hailo-compiled counterparts. Four models were converted to ONNX format and compiled with the Hailo SDK (with quantization). Benchmarking was conducted using both dummy inputs and real video streams. An overlay system was implemented to display "DEEP FAKE" on the video whenever a fake is detected, demonstrating real-time deployment. Results show significant improvements in inference speed using Hailo (up to 18× faster FPS and much lower latency), with no loss in classification accuracy. This work was developed as part of a university project
